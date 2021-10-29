@@ -9,7 +9,7 @@ public class ATM {
         double req = sc.nextDouble();
         double bal = sc.nextDouble();
         if(req%5==0){
-            if(bal>=req-0.5){
+            if(req<=(bal-0.5)){
                 bal = bal-req-0.5;
             }
         }
