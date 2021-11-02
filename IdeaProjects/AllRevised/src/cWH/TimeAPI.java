@@ -2,12 +2,14 @@ package cWH;
 
 import java.time.*;
 
+import static java.lang.System.*;
+
 public class TimeAPI {
     public static void main(String[] args) {
         LocalDate ld = LocalDate.of(2005,8,15);
-        System.out.println(ld.getDayOfWeek());
-        System.out.println(LocalDate.now());
-        System.out.println(LocalTime.now());
-        System.out.println(LocalDateTime.now());
+        out.println(ld.getDayOfWeek());
+        out.println(LocalDate.now());
+        out.println(LocalTime.now());
+        out.println(LocalDateTime.now());
     }
 }
