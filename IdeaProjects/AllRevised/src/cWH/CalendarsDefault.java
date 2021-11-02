@@ -26,6 +26,6 @@ public class CalendarsDefault {
         Scanner scanner = new Scanner(System.in);
         int month = scanner.nextInt(), day = scanner.nextInt(), year=scanner.nextInt();
         LocalDate dt = LocalDate.of(year,month,day);
-        System.out.println(dt.getDayOfWeek());
+        System.out.println(dt.getDayOfWeek()); //returns object type
     }
 }
