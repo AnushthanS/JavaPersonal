@@ -47,12 +47,14 @@ class Student{
 
 class SortByRoll implements Comparator<Student> {
     //Used for sorting in ascending order of roll number
+    @Override
     public int compare(Student a, Student b){
         return a.rollNo- b.rollNo;
     }
 }
 
 class SortByName implements Comparator<Student>{
+    @Override
     public int compare(Student a, Student b){
         return a.name.compareTo(b.name);
     }
