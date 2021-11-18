@@ -24,11 +24,24 @@ public class BigDecimalHRProblem {
         Arrays.sort(s, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
+                if(o1==null || o2==null) return 0;
                 BigDecimal b1= new BigDecimal(o1);
                 BigDecimal b2= new BigDecimal(o2);
                 return b1.compareTo(b2);
             }
         });
+
+        Arrays.sort(s, Collections.reverseOrder(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                if(o1==null || o2==null) return 0;
+                else {
+                    BigDecimal b1=new BigDecimal(o1);
+                    BigDecimal b2=new BigDecimal(o2);
+                    return b1.compareTo(b2);
+                }
+            }
+        }));
 
         //Output as given in problem, locked in editor
         for(int i=0;i<n;i++){
