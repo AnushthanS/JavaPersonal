@@ -14,24 +14,11 @@ class Result {
 
     public static void miniMaxSum(List<Integer> arr) {
         // Write your code here
-        ArrayList<Long> output = new ArrayList<>();
-        for(int i=0;i<arr.size();i++){
-            long sum=0;
-            for(int e: arr){
-                if(arr.get(i)!=e) sum+=e;
-            }
-            output.add(sum);
-        }
-        output.sort(new Comparator<Long>() {
-            @Override
-            public int compare(Long o1, Long o2) {
-                return (int) (o1 - o2);
-            }
-        });
-
-        System.out.printf("%d %d",output.get(0),output.get(output.size()-1));
+        arr.sort((o1, o2) -> o1-o2);
+        long sum=0;
+        for(Integer e: arr) sum+=e;
+        System.out.printf("%d %d",sum- arr.get(arr.size()-1),sum-arr.get(0));
     }
-
 }
 
 public class HRMinMaxSum {
