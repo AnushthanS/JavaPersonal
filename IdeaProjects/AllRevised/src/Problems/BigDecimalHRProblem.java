@@ -31,6 +31,7 @@ public class BigDecimalHRProblem {
             }
         });
 
+        //Anonymous class
         Arrays.sort(s, Collections.reverseOrder(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
