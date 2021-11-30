@@ -23,7 +23,7 @@ public class AnonymousLambda {
 
 @FunctionalInterface
 interface DemoAnonymous{
-    public void method1();
+     void method1();
 }
 
 class AnonyDemo implements DemoAnonymous{
