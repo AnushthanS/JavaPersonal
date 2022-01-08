@@ -31,7 +31,7 @@ abstract class Child2 extends Parent{
     }
 }
 
-public class abstraction {
+public class Abstraction {
     public static void main(String[] args) {
         Parent obj = new Child1();  //Dynamic method dispatch
         obj.say();
