@@ -11,7 +11,7 @@ public class Pangram {
         String check = "abcdefghijklmnopqrstuvwxyz";
         for(Character c: arr){
             if(c < 65 || c > 90) continue;
-            if(check.indexOf(c) == -1) flag=false;
+            if(check.indexOf(c) == -1) {flag=false; break;}
         }
         System.out.println(flag? "Pangram":"Not Pangram");
     }
