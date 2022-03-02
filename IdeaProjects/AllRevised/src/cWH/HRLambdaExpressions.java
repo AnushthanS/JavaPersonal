@@ -1,5 +1,5 @@
 package cWH;
-
+// https://www.hackerrank.com/challenges/java-lambda-expressions/problem?isFullScreen=true
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
