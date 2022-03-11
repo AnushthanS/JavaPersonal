@@ -28,7 +28,10 @@ public class PalindromeImportant {
         boolean flag = true;
         int i,j;
         for(i=0, j=A.length()-1;i<=j;i++,j--){
-            if(A.charAt(i)!=A.charAt(j))flag = false;
+            if(A.charAt(i)!=A.charAt(j)){
+                flag = false;
+                break;
+            }
         }
         System.out.println(flag? "Yes":"No");
     }
