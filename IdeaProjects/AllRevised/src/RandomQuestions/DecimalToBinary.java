@@ -7,6 +7,8 @@ public class DecimalToBinary {
         convertBinary(n);
         System.out.println(bin);
         System.out.println(convertBinaryIt(n));
+        // In built method
+        System.out.println(Integer.toBinaryString(n));
     }
 
     //Iterative approach
