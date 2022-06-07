@@ -17,7 +17,6 @@ public class Ex2 {
         while(game<=4)
         {   double comp = 3.0*Math.random();
             int fin = (int)comp;
-
             int inp = sc.nextInt();
             if (inp!=0&&inp!=1&&inp!=2) System.out.println("Enter a valid option only");
             if (inp==0 ){

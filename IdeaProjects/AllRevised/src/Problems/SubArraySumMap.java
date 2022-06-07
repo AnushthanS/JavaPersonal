@@ -1,5 +1,6 @@
 package Problems;
 import java.util.HashMap;
+import java.util.Map;
 
 // https://www.youtube.com/watch?v=XzwUBIkR9pA
 // Find a subarray with the given sum
@@ -12,7 +13,7 @@ public class SubArraySumMap {
         obj.subArrSum(arr, sum, arr.length);
     }
     public void subArrSum(int[] arr, int sum, int size){
-        HashMap<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         int currentSum = 0, start = 0, end = -1;
         for(int i=0; i<size; i++){
             currentSum+=arr[i];
