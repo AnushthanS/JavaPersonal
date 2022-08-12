@@ -11,6 +11,6 @@ public class FrameIntro {
         frame.setVisible(true);
 //        ImageIcon image = new ImageIcon("path");
 //        frame.setIconImage(image.getImage());
-        frame.getContentPane().setBackground(new Color(100, 200, 110));
+        frame.getContentPane().setBackground(new Color(100, 20, 110));
     }
 }
