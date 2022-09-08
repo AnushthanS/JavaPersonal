@@ -109,6 +109,7 @@ class Circle{
         System.out.print("Center :");
         center.print();
         System.out.println("Radius : "+getRadius());
+        System.out.println("Area   : "+getAreaCircle());
     }
     public boolean isSmaller(Circle circle){
         return circle.getAreaCircle() < this.getAreaCircle();
