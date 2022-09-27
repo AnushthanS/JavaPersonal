@@ -1,12 +1,12 @@
 package College;
 
-class Student{
+class Student1 {
     private String name;
     private String rollNumber;
     private float cgpa;
     private String instituteName;
 
-    public Student(String name, String rollNumber, float cgpa, String instituteName) {
+    public Student1(String name, String rollNumber, float cgpa, String instituteName) {
         setName(name);
         setRollNumber(rollNumber);
         setCgpa(cgpa);
@@ -96,7 +96,7 @@ class Teacher{
 public class CollegeManagement_S20210010027 {
     public static void main(String[] args) {
 
-        Student student1 = new Student("Anushthan", "S20210010027", 9.1f, "IIITS");
+        Student1 student1 = new Student1("Anushthan", "S20210010027", 9.1f, "IIITS");
 
         Teacher teacher1 = new Teacher("abc", "OOP", 100000);
 
