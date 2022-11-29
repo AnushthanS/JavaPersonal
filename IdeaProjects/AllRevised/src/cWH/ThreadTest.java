@@ -24,9 +24,14 @@ class MyThreadTest implements Runnable{
     @Override
     public void run() {
         System.out.println("Some code here");
+        try{
+        Thread.sleep(1000);
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
     }
 }
-public class threadtest {
+public class ThreadTest {
     public static void main(String[] args) {
         MyThread1 obj1 = new MyThread1();
         MyThread2 obj2 = new MyThread2();
