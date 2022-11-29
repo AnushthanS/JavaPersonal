@@ -8,8 +8,7 @@ class TestGenerics1{
     }
 
     public <T extends Comparable<T>> T maximum(T o1, T o2){
-        T max = o1.compareTo(o2) > 0 ? o1 : o2;
-        return max;
+        return o1.compareTo(o2) > 0 ? o1 : o2;
     }
 }
 
@@ -24,5 +23,13 @@ class TestGenerics2 <T1, T2>{
 
 public class GenericIntro {
     public static void main(String[] args) {
+        TestGenerics1 testGenerics1 = new TestGenerics1();
+        Integer[] arr = {1, 2, 3, 4};
+        testGenerics1.printElements(arr);
+
+        Character a = 'a', b = 'b';
+        Character max = testGenerics1.maximum(a, b);
+
+        TestGenerics2<String, Integer> testGenerics2 = new TestGenerics2<>("abc", 10);
     }
 }
