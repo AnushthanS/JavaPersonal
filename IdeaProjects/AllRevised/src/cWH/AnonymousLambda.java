@@ -1,5 +1,10 @@
 package cWH;
 
+@FunctionalInterface
+interface TestInterface{
+    void test();
+}
+
 public class AnonymousLambda {
     public static void main(String[] args) {
         //Regular method
@@ -17,6 +22,16 @@ public class AnonymousLambda {
             System.out.println("This is method 1 being called from a lambda expression");
         }; obj2.method1();
 
+        TestInterface t1 = new TestInterface(){
+            @Override public void test(){
+                System.out.println("Anonymous example of a functional interface implementation!");
+            }
+        };
+        t1.test();
+        TestInterface t2 = ()->{
+            System.out.println("Lambda expression example of a functional interface implementation!");
+        };
+        t2.test();
     }
 }
 
