@@ -43,6 +43,9 @@ public class ThreadTest {
         MyThreadTest mt = new MyThreadTest();
         ExecutorService es = Executors.newCachedThreadPool();
 
+        MyThreadTest mt2 = new MyThreadTest();
+        mt2.t.start();
+
         es.execute(mt);
         es.shutdown();
     }
